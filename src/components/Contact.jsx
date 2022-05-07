@@ -1,6 +1,24 @@
+import { useState } from "react";
 import "../styles/contact.css";
 
 const Contact = () => {
+  const [value, setValue] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    let input = e.target.value;
+    setValue({...value, [e.target.name]: input});
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(Object.entries(value));
+  }
+
   return (
     <div className="contact-wrap">
       <div className="contact-details">
@@ -20,19 +38,55 @@ const Contact = () => {
       </div>
       <div className="form-wrap">
         <h1>Get in Touch</h1>
-        <p className="copy">Got a special request or need some information? Reach out to us and we’ll respond as soon as possible</p>
-        <form action="">
+        <p className="copy">
+          Got a special request or need some information? Reach out to us and
+          we’ll respond as soon as possible
+        </p>
+        <form onSubmit={handleSubmit}>
           <div>
-            <input type="text" placeholder="Your Name" />
+            <label>
+              <input
+                type="text"
+                placeholder="Your Name"
+                name="name"
+                id="name"
+                value={value.name}
+                onChange={handleChange}
+              />
+            </label>
           </div>
           <div>
-            <input type="email" placeholder="Your email" name="" id="" />
+            <label>
+              <input
+                type="email"
+                placeholder="Your email"
+                name="email"
+                id="email"
+                value={value.email}
+                onChange={handleChange}
+              />
+            </label>
           </div>
           <div>
-            <input type="tel" placeholder="Your phone number" name="" id="" />
+            <label>
+              <input
+                type="tel"
+                placeholder="Your phone number"
+                name="phone"
+                id="phone"
+                value={value.phone}
+                onChange={handleChange}
+              />
+            </label>
           </div>
           <div>
-            <textarea name="" id="" placeholder="Your message"></textarea>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your message"
+              value={value.message}
+              onChange={handleChange}
+            ></textarea>
           </div>
           <button type="submit">Send</button>
         </form>
