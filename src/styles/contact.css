@@ -1,54 +1,56 @@
-body{
-  padding-bottom: ;
-}
-
 .contact-wrap {
   display: flex;
   flex-direction: column;
 }
 
-.contact-details{
+.contact-details {
   background: var(--purple);
   color: #ffffff;
   padding: 2.5rem 2rem 4rem 2rem;
   display: grid;
   row-gap: 1rem;
 }
-.address p{
+.address p {
   display: inline;
 }
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
-i{
+i {
   margin-right: 1rem;
 }
 
-.copy{
-  margin: .5rem 0 2rem 0;
+.copy {
+  margin: 0.5rem 0 2rem 0;
 }
 
-.form-wrap{
+.form-wrap {
   padding: 2rem;
 }
-form{
+form {
   display: grid;
   row-gap: 1rem;
 }
-input[type=text], input[type=email], input[type=tel], textarea{
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
   width: 100%;
-  padding: .5rem;
+  padding: 0.5rem;
   border: none;
   border-bottom: 1px solid #eaeaea;
 }
-input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, textarea:focus{
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
   outline: none;
 }
 
-button{
-  width: 50%;
-  padding: .5rem;
+button {
+  width: 30%;
+  padding: 0.5rem;
   border: 2px solid var(--purple);
   background: #ffffff;
   border-radius: 4px;
@@ -56,7 +58,7 @@ button{
   font-weight: bold;
   margin: 1rem 0 2rem 0;
 }
-button:hover{
+button:hover {
   background: var(--purple);
   color: #ffffff;
 }
@@ -64,5 +66,15 @@ button:hover{
 @media screen and (min-width: 769px) {
   .contact-wrap {
     flex-direction: row;
+    justify-content: center;
+    padding: 4rem;
+  }
+
+  .form-wrap {
+    width: 40%;
+  }
+
+  button {
+    width: 25%;
   }
 }

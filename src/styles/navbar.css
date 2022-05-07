@@ -6,7 +6,6 @@
 }
 .menu {
   background: rgb(255, 255, 255);
-  /* box-shadow: 0 0.1px 10px #eaeaea; */
   border-top: 1px solid #eaeaea;
   list-style-type: none;
   position: absolute;
@@ -32,6 +31,7 @@
     justify-content: space-between;
     position: static;
     box-shadow: none;
+    border: none;
   }
   .menu li{
     border: none;
