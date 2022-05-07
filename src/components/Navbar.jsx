@@ -1,4 +1,4 @@
-import "./styles/navbar.css";
+import "../styles/navbar.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -10,7 +10,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="nav">
+    <nav className="nav">
       <ul className="menu">
         <li>
           <Link to="/">Home</Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
           display: ${hamburgerOpen ? "inline" : "none"};
         }
       `}</style>
-    </div>
+    </nav>
   );
 };
 

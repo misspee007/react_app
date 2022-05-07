@@ -1,0 +1,14 @@
+:root{
+  --purple: rgba(104, 0, 202, 0.821);
+  --primary: rgb(33, 0, 62);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  color: var(--primary);
+}
