@@ -1,0 +1,78 @@
+header{
+  display: grid;
+  grid-template-rows: 1fr 1.1fr;
+  background: url(../assets/images/illustration-working.svg) 1.5rem top/31rem no-repeat;
+}
+
+.hero-img-wrap{
+  grid-row: 1;
+}
+
+.hero-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 8rem;
+  margin: 0 1.5rem;
+}
+.hero-section h1{
+  color: var(--dark-violet);
+}
+.hero-txt{
+  color: var(--grayish-violet);
+  line-height: 1.9rem;
+  margin: .5rem 0 2rem 0;
+  font-size: 18px;
+}
+
+.shorten-wrap{
+  position: relative;
+}
+.shorten{
+  position: absolute;
+  width: 88vw;
+  top: -4.5rem;
+  display: grid;
+  row-gap: 1rem;
+  border-radius: 10px;
+  margin: 0 1.5rem;
+  background: var(--very-dark-blue) url(../assets/images/bg-shorten-mobile.svg) no-repeat;
+  background-position: top right;
+  padding: 1.5rem;
+}
+.shorten input[type=text]{
+  border: none;
+  border-radius: 5px;
+  padding: .8rem;
+  width: 100%;
+}
+
+.advanced{
+  background: hsla(258, 7%, 63%, 0.153);
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.advanced .title{
+  margin: 6rem 0 3rem 0;
+}
+.advanced .title h2{
+  color: var(--very-dark-violet);
+}
+
+.cards{
+  display: grid;
+  row-gap: 4rem;
+}
+
+@media screen and (min-width: 601px) {
+  header {
+    flex-direction: row;
+  }
+
+  .shorten{
+
+  }
+
+
+}

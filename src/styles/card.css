@@ -1,0 +1,19 @@
+.card{
+  border-radius: 5px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.card h3{
+  color: var(--dark-violet);
+  line-height: 2rem;
+}
+
+/*.card .img{
+  position: relative;
+  top: -2rem;
+  background: var(--very-dark-violet);
+  padding: 1rem;
+  width: 10%;
+} */

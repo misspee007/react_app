@@ -1,0 +1,33 @@
+.btn {
+  background: var(--cyan);
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: hsla(180, 66%, 49%, 0.537);
+  cursor: pointer;
+}
+
+.btn-rounded{
+  border-radius: 30px;
+}
+
+.btn-rounded-sm{
+  border-radius: 5px;
+}
+
+/* sizez */
+.btn-sm{
+  padding: .5rem 1rem;
+}
+.btn-rg{
+  width: 11rem;
+  padding: 1rem 0;
+}
+.btn-lg{
+  padding: .8rem;
+  width: 100%;
+}

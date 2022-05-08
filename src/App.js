@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/notFound" element={<NotFound/>} />
         <Route path="*" element={<Navigate to={"/notFound"} replace/>} />
       </Routes>
+      <Footer />
     </div>
   );
 }
