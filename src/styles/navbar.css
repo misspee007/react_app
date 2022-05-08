@@ -9,18 +9,14 @@
 }
 .menu {
   background: rgb(255, 255, 255);
-  border-top: 1px solid #eaeaea;
   list-style-type: none;
   position: absolute;
   width: 100%;
-  top: 3rem;
+  top: 5rem;
 }
 
-.menu li{
-  padding: .5rem 2rem;
-}
 .menu li a:focus, .menu li a:hover{
-  border-bottom: 2px solid var(--purple);
+  color: var(--dark-violet);
 }
 
 .menu a {

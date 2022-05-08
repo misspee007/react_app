@@ -1,15 +1,14 @@
 .btn {
-  padding: 1rem 0;
   background: var(--cyan);
   border: none;
   color: #ffffff;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .btn:hover {
-  background: var(--purple);
-  color: #ffffff;
+  background: hsla(180, 66%, 49%, 0.537);
+  cursor: pointer;
 }
 
 .btn-rounded{
@@ -21,6 +20,14 @@
 }
 
 /* sizez */
+.btn-sm{
+  padding: .5rem 1rem;
+}
 .btn-rg{
   width: 11rem;
+  padding: 1rem 0;
+}
+.btn-lg{
+  padding: .8rem;
+  width: 100%;
 }

@@ -1,33 +1,28 @@
 import "../styles/home.css";
 
-import { Link } from "react-router-dom";
-
-import heroImg from "../assets/images/illustration-working.svg";
 import Card from "./Card";
 import iconBr from "../assets/images/icon-brand-recognition.svg";
 import iconDr from "../assets/images/icon-detailed-records.svg";
 import iconFc from "../assets/images/icon-fully-customizable.svg";
 import Button from "./Button";
+import data from "../data/data.json";
 
 const Home = () => {
+  console.log(data.main[0]);
   return (
     <>
       <header>
         <div className="hero-section">
-          <h1>More than just shorter links</h1>
-          <p className="hero-txt">
-            Build your brand’s recognition and get detailed insights on how your
-            links are performing.
-          </p>
+          <h1>{data.header.title}</h1>
+          <p className="hero-txt">{data.header.copy}</p>
           <Button text="Get Started" type="btn btn-rg btn-rounded" />
         </div>
-        <div className="hero-img-wrap">
-        </div>
+        <div className="hero-img-wrap"></div>
       </header>
 
       <main>
-        <section>
-          <form>
+        <section className="shorten-wrap">
+          <form className="shorten">
             <label>
               <input
                 type="text"
@@ -36,7 +31,7 @@ const Home = () => {
                 placeholder="Shorten a link here..."
               />
             </label>
-            <Button text="Shorten It!" />
+            <Button text="Shorten It!" type="btn btn-lg btn-rounded-sm" />
           </form>
         </section>
         <section className="advanced">
@@ -48,21 +43,11 @@ const Home = () => {
             </p>
           </div>
           <div className="cards">
-              <Card
-                icon={iconBr}
-                title="Brand Recognition"
-                copy="Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content."
-              />
-              <Card
-                icon={iconDr}
-                title="Detailed Records"
-                copy="Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions."
-              />
-              <Card
-                icon={iconFc}
-                title="Fully Customizable"
-                copy="Improve brand awareness and content discoverability through customizable links, supercharging audience engagement."
-              />
+            {data.main.map((i) => (
+              <div key={i.id}>
+                <Card icon={i.icon} title={i.title} copy={i.desc} />
+              </div>
+            ))}
           </div>
         </section>
       </main>
