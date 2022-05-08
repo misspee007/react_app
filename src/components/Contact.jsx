@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/contact.css";
+import Button from "./Button";
 
 const Contact = () => {
   const [value, setValue] = useState({
@@ -88,7 +89,7 @@ const Contact = () => {
               onChange={handleChange}
             ></textarea>
           </div>
-          <button type="submit">Send</button>
+          <Button type="btn rounded" text="Send" />
         </form>
       </div>
     </div>

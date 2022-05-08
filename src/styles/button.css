@@ -1,0 +1,26 @@
+.btn {
+  padding: 1rem 0;
+  background: var(--cyan);
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background: var(--purple);
+  color: #ffffff;
+}
+
+.btn-rounded{
+  border-radius: 30px;
+}
+
+.btn-rounded-sm{
+  border-radius: 5px;
+}
+
+/* sizez */
+.btn-rg{
+  width: 11rem;
+}

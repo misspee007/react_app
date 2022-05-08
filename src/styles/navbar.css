@@ -1,8 +1,11 @@
 .nav{
   display: flex;
-  justify-content: flex-end;
-  padding: 1rem 0;
-  box-shadow: 0 0.1px 10px #eaeaea;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1.5rem 1rem 1.5rem;
+}
+.nav .logo{
+  display: flex;
 }
 .menu {
   background: rgb(255, 255, 255);
@@ -12,6 +15,7 @@
   width: 100%;
   top: 3rem;
 }
+
 .menu li{
   padding: .5rem 2rem;
 }

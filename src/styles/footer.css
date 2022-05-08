@@ -1,0 +1,51 @@
+footer{
+  color: #ffffff;
+  font-size: 16px;
+  background-color: var(--very-dark-violet);
+}
+
+footer li {
+  list-style-type: none;
+  color: var(--grayish-violet);
+  line-height: 2rem;
+}
+
+.footer-top{
+  display: grid;
+  place-items: center;
+  row-gap: 1rem;
+  padding: 5rem 0;
+  background: var(--very-dark-blue) url(../assets/images/bg-boost-mobile.svg) no-repeat;
+}
+
+.footer-btm{
+  display: grid;
+  align-items: center;
+  text-align: center;
+  row-gap: 2rem;
+  padding: 3rem 0;
+  background: var(--very-dark-violet);
+}
+
+.footer-menu{
+  display: grid;
+  row-gap: 2rem;
+}
+.footer-menu h4{
+  margin-bottom: 1rem;
+}
+
+footer .socials{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 7.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: .5rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
