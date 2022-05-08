@@ -1,9 +1,9 @@
 import "../styles/home.css";
 
 import Card from "./Card";
-import iconBr from "../assets/images/icon-brand-recognition.svg";
-import iconDr from "../assets/images/icon-detailed-records.svg";
-import iconFc from "../assets/images/icon-fully-customizable.svg";
+// import iconBr from "../assets/images/icon-brand-recognition.svg";
+// import iconDr from "../assets/images/icon-detailed-records.svg";
+// import iconFc from "../assets/images/icon-fully-customizable.svg";
 import Button from "./Button";
 import data from "../data/data.json";
 
