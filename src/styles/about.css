@@ -1,0 +1,22 @@
+.about{
+  padding: 1rem 1.5rem 4rem 1.5rem;
+  text-align: center;
+}
+
+.about h1{
+  color: var(--dark-violet);
+  line-height: 4rem;
+}
+
+.about p{
+  line-height: 2rem;
+}
+
+@media screen and (min-width: 601px){
+  .about{
+    padding: 4rem 12rem 8rem 12rem;
+  }
+  .about p{
+    padding: 0 10rem;
+  }
+}

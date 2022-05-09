@@ -1,11 +1,13 @@
 import "../styles/home.css";
+import { useContext } from "react";
+import { DataContext } from "../App.js";
 
 import Card from "./Card";
 import Button from "./Button";
-import data from "../data/data.json";
 
 const Home = () => {
-  console.log(data.main[0]);
+  const data = useContext(DataContext);
+
   return (
     <>
       <header>
