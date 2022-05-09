@@ -53,3 +53,14 @@ footer .socials{
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+
+@media screen and (min-width: 601px) {
+  .footer-top{
+    background-image: url(../assets/images/bg-boost-desktop.svg);
+    background-size: cover;
+  }
+  .footer-btm{
+    
+  }
+}

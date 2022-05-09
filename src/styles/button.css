@@ -11,23 +11,29 @@
   cursor: pointer;
 }
 
-.btn-rounded{
+.btn-rounded {
   border-radius: 30px;
 }
 
-.btn-rounded-sm{
+.btn-rounded-sm {
   border-radius: 5px;
 }
 
 /* sizez */
-.btn-sm{
-  padding: .5rem 1rem;
+.btn-sm {
+  padding: 0.5rem 1rem;
 }
-.btn-rg{
+.btn-rg {
   width: 11rem;
   padding: 1rem 0;
 }
-.btn-lg{
-  padding: .8rem;
+.btn-lg {
+  padding: 0.8rem;
   width: 100%;
+}
+
+@media screen and (min-width: 601px) {
+  .btn-sm {
+    width: 100%;
+  }
 }
