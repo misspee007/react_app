@@ -11,7 +11,7 @@ const Footer = () => {
         <Button text="Get Started" type="btn btn-rounded btn-rg" />
       </div>
       <div className="footer-btm">
-        <Link to="/shortly">
+        <Link to="/shortly" className="logo-cont">
           <img src={logoWhite} alt="Shortly logo"  />
         </Link>
         <div className="footer-menu">

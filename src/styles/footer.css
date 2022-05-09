@@ -61,6 +61,27 @@ footer .socials{
     background-size: cover;
   }
   .footer-btm{
-    
+    grid-template-columns: 2fr 2fr 1fr;
+    align-items: flex-start;
+    text-align: center;
+    padding: 3rem 12rem;
+    font-size: 12px;
+  }
+  .logo-cont{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .footer-menu{
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4.5rem;
+  }
+  footer .socials{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  footer .socials i{
+    margin-left: 1rem;
   }
 }
