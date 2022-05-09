@@ -1,9 +1,9 @@
 
-const About = () => {
+const About = ({text}) => {
   return (
     <div>
-      About
-      {/* <Link to="/productDetails">Product Details</Link> */}
+      <h1>About Us</h1>
+      <p>{text}</p>
     </div>
   )
 }

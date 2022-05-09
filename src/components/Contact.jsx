@@ -34,7 +34,7 @@ const Contact = () => {
         </div>
         <div>
           <i className="bi bi-envelope"></i>
-          <a href="mailto:mail@test.com">mail@test.com</a>
+          <a href="mailto:mail@shortly.com">mail@shortly.com</a>
         </div>
       </div>
       <div className="form-wrap">
@@ -89,7 +89,7 @@ const Contact = () => {
               onChange={handleChange}
             ></textarea>
           </div>
-          <Button type="btn rounded" text="Send" />
+          <Button type="btn btn-rounded btn-rg" text="Send" />
         </form>
       </div>
     </div>

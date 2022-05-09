@@ -4,18 +4,22 @@
 }
 
 .contact-details {
-  background: var(--purple);
-  color: #ffffff;
+  background: hsla(258, 7%, 63%, 0.153);
+  color: var(--very-dark-blue);
   padding: 2.5rem 2rem 4rem 2rem;
   display: grid;
   row-gap: 1rem;
 }
+.contact-details i{
+  margin-right: 1rem;
+}
 .address p {
   display: inline;
+  color: var(--grayish-violet);
 }
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--grayish-violet);
 }
 
 .copy {
@@ -25,11 +29,14 @@ a {
 .form-wrap {
   padding: 2rem;
 }
+.form-wrap h1{
+  color: var(--very-dark-blue);
+}
 .form-wrap form {
   display: grid;
   row-gap: 1rem;
 }
-/* input[type="text"],
+input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
@@ -43,7 +50,7 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
   outline: none;
-} */
+}
 
 
 @media screen and (min-width: 769px) {
