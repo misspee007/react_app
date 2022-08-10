@@ -1,11 +1,10 @@
 import "../styles/home.css";
-import { useContext } from "react";
-import { DataContext } from "../App.js";
+import { useAppContext } from "../context/context";
 
 import { Card, Button } from "../components/index";
 
 const Home = () => {
-	const data = useContext(DataContext);
+	const data = useAppContext();
 
 	return (
 		<>
