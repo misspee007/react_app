@@ -30,7 +30,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/signup">
-              <Button text="Sign Up" type="btn btn-rounded-sm btn-sm" />
+              <Button type="btn btn-rounded-sm btn-sm">Sign Up</Button>
             </Link>
           </li>
         </ul>
