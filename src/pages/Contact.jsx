@@ -89,7 +89,7 @@ const Contact = () => {
 							onChange={handleChange}
 						></textarea>
 					</div>
-					<Button type="btn btn-rounded btn-rg" text="Send" />
+					<Button type="btn btn-rounded btn-rg">Send</Button>
 				</form>
 			</div>
 		</div>
