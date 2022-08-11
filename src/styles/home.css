@@ -53,13 +53,43 @@ header {
   outline: none;
 }
 
+.links-wrap{
+  margin-top: 3.4rem;
+}
+.links{
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+.links span{
+  color: var(--very-dark-violet);
+  border-bottom: 1px solid var(--gray);
+  padding: 1rem;
+}
+.links .full-link{
+  /* margin-right: 1rem; */
+  text-align: left;
+  /* overflow: hidden; */
+  overflow-wrap: break-word;
+}
+.links .short-link{
+  text-align: left;
+  color: var(--cyan);
+  padding-bottom: 1rem;
+}
+.links div{
+  padding: 1rem;
+}
+
 .advanced {
   background: hsla(258, 7%, 63%, 0.153);
   padding: 3rem 1.5rem;
   text-align: center;
 }
 .advanced .title {
-  margin: 6rem 0 3rem 0;
+  margin: 4rem 0 3rem 0;
 }
 .advanced .title h2 {
   color: var(--very-dark-violet);
@@ -107,5 +137,9 @@ header {
 
   .advanced {
     padding: 3rem 12rem;
+  }
+
+  .advanced .title {
+    margin: 6rem 0 3rem 0;
   }
 }
