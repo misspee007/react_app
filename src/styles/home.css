@@ -63,12 +63,16 @@ header {
   border-radius: 8px;
   margin-top: 1.5rem;
 }
-.links .full-link{
+.links span{
   color: var(--very-dark-violet);
-  text-align: left;
-  overflow-wrap: break-word;
   border-bottom: 1px solid var(--gray);
   padding: 1rem;
+}
+.links .full-link{
+  /* margin-right: 1rem; */
+  text-align: left;
+  /* overflow: hidden; */
+  overflow-wrap: break-word;
 }
 .links .short-link{
   text-align: left;

@@ -73,7 +73,7 @@ const Home = () => {
 						<div className="links-wrap">
 							{Object.entries(linkStore).map((i, index) => (
 								<div key={index} className="links">
-									<p className="full-link">{i[0]}</p>
+									<span><p className="full-link">{i[0]}</p></span>
 
 									<div>
 										<p className="short-link">{i[1]}</p>

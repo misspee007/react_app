@@ -13,14 +13,16 @@
 
 .card .img{
   position: absolute;
-  top: -20%;
-  left: 39%;
+  top: -17%;
+  left: 41%;
   background: var(--dark-violet);
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  padding: 1.2rem;
+  padding: 1rem;
 }
 
 .card img{
+  width: 2.1rem;
+  height: 2.1rem;
 }
