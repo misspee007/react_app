@@ -8,7 +8,8 @@
 
 .card h3{
   color: var(--dark-violet);
-  line-height: 2rem;
+  line-height: 3rem;
+  margin-top: .5rem;
 }
 
 .card .img{

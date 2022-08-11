@@ -66,13 +66,13 @@ header {
 .links span{
   color: var(--very-dark-violet);
   border-bottom: 1px solid var(--gray);
-  padding: 1rem;
+  padding: 1rem 0 1rem 1rem;
 }
 .links .full-link{
-  /* margin-right: 1rem; */
+  margin-right: 1rem;
   text-align: left;
-  /* overflow: hidden; */
-  overflow-wrap: break-word;
+  overflow: hidden;
+  /* overflow-wrap: break-word; */
 }
 .links .short-link{
   text-align: left;
