@@ -3,14 +3,18 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { useAppContext } from "../context/context";
 import { Card, Button } from "../components/index";
+import { icon1, icon2, icon3 } from "../assets/index";
 
 const Home = () => {
+	const icons = [0, icon1, icon2, icon3];
 	const data = useAppContext();
 	const [userInput, setUserInput] = useState("");
-	const [linkStore, setLinkStore] = useState(JSON.parse(localStorage.getItem("linkStore")));
+	const [linkStore, setLinkStore] = useState(
+		JSON.parse(localStorage.getItem("linkStore"))
+	);
 
 	useEffect(() => {
-    localStorage.setItem("linkStore", JSON.stringify(linkStore));
+		localStorage.setItem("linkStore", JSON.stringify(linkStore));
 	}, [linkStore]);
 
 	const fetchShortenedLink = async () => {
@@ -65,17 +69,25 @@ const Home = () => {
 					</form>
 				</section>
 				<section className="advanced">
-        {linkStore && Object.entries(linkStore).map((i, index) => (
-					<div key={index}>
-						{i[0]}
-            <br />
-            {i[1]}
+					{linkStore && (
+						<div className="links-wrap">
+							{Object.entries(linkStore).map((i, index) => (
+								<div key={index} className="links">
+									<p className="full-link">{i[0]}</p>
 
-						<Button type="btn btn-lg btn-rounded-sm" onClick={() => navigator.clipboard.writeText(i[1]) }>
-							Copy
-						</Button>
-					</div>
-          ) )}
+									<div>
+										<p className="short-link">{i[1]}</p>
+										<Button
+											type="btn btn-lg btn-rounded-sm"
+											onClick={() => navigator.clipboard.writeText(i[1])}
+										>
+											Copy
+										</Button>
+									</div>
+								</div>
+							))}
+						</div>
+					)}
 					<div className="title">
 						<h2>Advanced Statistics</h2>
 						<p>
@@ -86,7 +98,7 @@ const Home = () => {
 					<div className="cards">
 						{data.main.map((i) => (
 							<div key={i.id}>
-								<Card icon={i.icon} title={i.title} copy={i.desc} />
+								<Card icon={icons[i.id]} title={i.title} copy={i.desc} />
 							</div>
 						))}
 					</div>

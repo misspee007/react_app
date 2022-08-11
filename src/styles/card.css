@@ -3,6 +3,7 @@
   background-color: #ffffff;
   text-align: center;
   padding: 2rem 1.5rem;
+  position: relative;
 }
 
 .card h3{
@@ -10,10 +11,16 @@
   line-height: 2rem;
 }
 
-/*.card .img{
-  position: relative;
-  top: -2rem;
-  background: var(--very-dark-violet);
-  padding: 1rem;
-  width: 10%;
-} */
+.card .img{
+  position: absolute;
+  top: -20%;
+  left: 39%;
+  background: var(--dark-violet);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem;
+}
+
+.card img{
+}
