@@ -89,7 +89,7 @@ header {
   text-align: center;
 }
 .advanced .title {
-  margin: 4rem 0 3rem 0;
+  margin: 4rem 0 5rem 0;
 }
 .advanced .title h2 {
   color: var(--very-dark-violet);
@@ -97,7 +97,8 @@ header {
 
 .cards {
   display: grid;
-  row-gap: 4rem;
+  margin-bottom: 1rem;
+  /* row-gap: 5rem; */
 }
 
 @media screen and (min-width: 601px) {

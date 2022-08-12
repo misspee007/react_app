@@ -24,7 +24,7 @@ const Navbar = () => {
 					<li>Pricing</li>
 					<li>Resources</li>
 				</span>
-        <hr />
+				<hr />
 				<span className="menu-btm">
 					<li>
 						<Link to="/login">Login</Link>
@@ -38,7 +38,10 @@ const Navbar = () => {
 			</ul>
 
 			<div className="menu-icon" onClick={toggleHamburger}>
-				<i className={hamburgerOpen ? "bi bi-x" : "bi bi-list"}></i>
+				<i
+					className={hamburgerOpen ? "bi bi-x" : "bi bi-list"}
+					style={{fontSize: "2rem"}}
+				></i>
 			</div>
 
 			<style jsx="true">{`
