@@ -98,7 +98,7 @@ const Home = () => {
 					<div className="cards">
 						{data.main.map((i) => (
 							<div key={i.id}>
-								<Card icon={icons[i.id]} title={i.title} copy={i.desc} />
+								<Card icon={icons[i.id]} title={i.title} copy={i.desc} id={i.id} />
 							</div>
 						))}
 					</div>
